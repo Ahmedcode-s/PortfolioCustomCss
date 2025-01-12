@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import React from 'react'
-import "../app/styles/card.css"
+import React  from 'react';
+import "../app/styles/card.css";
 
 interface propsType {
     title: string;
@@ -11,7 +11,7 @@ interface propsType {
 
 const Card: React.FC<propsType> = ({ title, desc, img, tags }) => {
     return (
-        <div className={`card ${window.innerWidth >= 640 ? 'card-sm':''}`}data-aos="zoom-in-up">
+        <div className={`card ${window.innerWidth >= 640 ? 'card-sm':''}`} data-aos="zoom-in-up">
             <div>
                 <Image className={`card ${window.innerWidth >= 640 ? 'card-sm':''}`}
                     src={img}
